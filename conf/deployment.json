@@ -4,7 +4,7 @@
             {
                 "name": "cicd-sample",
                 "new_cluster": {
-                    "spark_version": "9.0.x-scala2.11",
+                    "spark_version": "9.1.x-scala2.12",
                     "node_type_id": "Standard_DS3_v2",
                     "num_workers": 2
                 },
@@ -26,7 +26,7 @@
             {            
                 "name": "cicd-sample-integration-test",
                 "new_cluster": {
-                    "spark_version": "9.0.x-scala2.11",
+                    "spark_version": "9.1.x-scala2.12",
                     "node_type_id": "Standard_DS3_v2",
                     "num_workers": 1
                 },
