@@ -2,7 +2,7 @@
     "default": {
         "jobs": [
             {
-                "name": "cdicd-sample",
+                "name": "cicd-sample",
                 "batman": {
                     "spark_version": "9.0.x-scala2.11",
                     "node_type_id": "Standard_DS3_v2",
@@ -16,15 +16,15 @@
                 },
                 "max_retries": 0,
                 "spark_python_task": {
-                    "python_file": "cdicd/jobs/sample/entrypoint.py",
+                    "python_file": "cicd/jobs/sample/entrypoint.py",
                     "parameters": [
                         "--conf-file",
                         "conf/test/sample.json"
                     ]
                 }
             },
-            {
-                "name": "cdicd-sample-integration-test",
+            {            
+                "name": "cicd-sample-integration-test",
                 "batman": {
                     "spark_version": "9.0.x-scala2.11",
                     "node_type_id": "Standard_DS3_v2",
