@@ -3,7 +3,7 @@
         "jobs": [
             {
                 "name": "cdicd-sample",
-                "new_cluster": {
+                "batman": {
                     "spark_version": "9.0.x-scala2.11",
                     "node_type_id": "Standard_DS3_v2",
                     "num_workers": 2
@@ -25,7 +25,7 @@
             },
             {
                 "name": "cdicd-sample-integration-test",
-                "new_cluster": {
+                "batman": {
                     "spark_version": "9.0.x-scala2.11",
                     "node_type_id": "Standard_DS3_v2",
                     "num_workers": 1
