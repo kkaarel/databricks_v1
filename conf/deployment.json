@@ -1,0 +1,46 @@
+{
+    "default": {
+        "jobs": [
+            {
+                "name": "cdicd-sample",
+                "new_cluster": {
+                    "spark_version": "9.0.x-scala2.11",
+                    "node_type_id": "Standard_DS3_v2",
+                    "num_workers": 2
+                },
+                "libraries": [],
+                "email_notifications": {
+                    "on_start": [],
+                    "on_success": [],
+                    "on_failure": []
+                },
+                "max_retries": 0,
+                "spark_python_task": {
+                    "python_file": "cdicd/jobs/sample/entrypoint.py",
+                    "parameters": [
+                        "--conf-file",
+                        "conf/test/sample.json"
+                    ]
+                }
+            },
+            {
+                "name": "cdicd-sample-integration-test",
+                "new_cluster": {
+                    "spark_version": "9.0.x-scala2.11",
+                    "node_type_id": "Standard_DS3_v2",
+                    "num_workers": 1
+                },
+                "libraries": [],
+                "email_notifications": {
+                    "on_start": [],
+                    "on_success": [],
+                    "on_failure": []
+                },
+                "max_retries": 0,
+                "spark_python_task": {
+                    "python_file": "tests/integration/sample_test.py"
+                }
+            }
+        ]
+    }
+}
